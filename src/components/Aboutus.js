@@ -18,7 +18,7 @@ export default function Aboutus() {
                     {/* <p className="d-inline-block border rounded-pill py-1 px-4">About Us</p> */}
                     <h1 className="mb-4">Get Know About Us!</h1>
                     <p>Dedicated to the enduring vision of late Babu Lal and late Badamiya Devi, our institute creates a transformative path for future generations to learn, heal, and serve. We are committed to providing top-quality nursing education and advanced training, fostering ethical values and compassionate care. Our college, established as a dream fulfilled, empowers students to become skilled healthcare professionals ready to serve the community and shape a better medical future in Ranchi, Jharkhand.</p>
-                    // <p className="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
+                    {/*<p className="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>*/}
                     <p><i className="far fa-check-circle text-primary me-3"></i>Quality health care</p>
                     <p><i className="far fa-check-circle text-primary me-3"></i>Only Qualified Doctors</p>
                     <p><i className="far fa-check-circle text-primary me-3"></i>Medical Research Professionals</p>
