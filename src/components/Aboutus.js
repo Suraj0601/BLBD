@@ -11,7 +11,7 @@ export default function Aboutus() {
                 <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style={{visibility: 'visible', animationdelay: '0.1s', animationname: 'fadeIn'}}>
                     <div className="d-flex flex-column dFlexnew">
                         <img className="img-fluid rounded w-75 align-self-end" src={about1} alt=""/>
-                        <img className="img-fluid rounded w-50 bg-white pt-3 pe-3 about2Img" src={about2} alt="" style={{margintop: '-25%'}}/>
+                        <img className="img-fluid rounded w-50 bg-white pt-3 pe-3 about2Img" src={about2} alt="" style={{margintop: '-13rem'}}/>
                     </div>
                 </div>
                 <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style={{visibility: 'visible', animationdelay: '0.5s', animationname: 'fadeIn'}}>
