@@ -31,7 +31,7 @@ export default function Service() {
                             <div className="service-content rounded-bottom bg-light p-4">
                                 <div className="service-content-inner">
                                     <h5 className="mb-4">Education</h5>
-                                    <p className="mb-4">We offer three professional nursing courses: ANM (Auxiliary Nurse Midwifery), GNM (General Nursing and Midwifery), and BSc in Nursing.
+                                    <p className="mb-4">We offer three professional nursing courses: ANM , GNM , and B.Sc in Nursing.
 
 </p>
                                     <a href="#" className="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
