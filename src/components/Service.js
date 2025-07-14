@@ -31,7 +31,7 @@ export default function Service() {
                             <div className="service-content rounded-bottom bg-light p-4">
                                 <div className="service-content-inner">
                                     <h5 className="mb-4">Education</h5>
-                                    <p className="mb-4">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
+                                    <p className="mb-4">We're providing three courses. ANM, GNM and BSc in Nursing</p>
                                     <a href="#" className="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
                                 </div>
                             </div>
