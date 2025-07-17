@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes, { string } from 'prop-types'
-import logo from './assets/logo2.png'
+import logo from './assets/blbd-logo.png'
 import carousel from './assets/service-5.jpg'
 import carousel2 from './assets/service.jpg'
 import './style.css'
@@ -9,6 +9,8 @@ export default function Navbar1() {
   return (
     <>
            {/* <!-- Topbar Start --> */}
+           
+
         <div className="container-fluid bg-dark px-5 d-none d-lg-block">
             <div className="row gx-0 align-items-center" style={{height: '45px'}}>
                 <div className="col-lg-8 text-center text-lg-start mb-lg-0">
@@ -30,21 +32,12 @@ export default function Navbar1() {
         </div>
 
 
-        {/* <!-- Topbar End --> */}
-
-
-        {/* <!-- Navbar & Hero Start --> */}
-
-
         <div className="container-fluid position-relative p-0">
             <nav className="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
                 <a href="index.html" className="navbar-brand p-0">
                     <img src={logo} alt="Logo"/>
                 </a>
-                <a href="index.html" className="navbar-brand py-3">
-                    {/* <h1 className="navbar-brand py-4 text-primary" style={{float: 'inline-end'}}>Babu lal badamia Devi</h1>
-                    <h1 className="navbar-brand py-5 text-primary"> Institute Of Health</h1> */}
-                </a>
+               <span class="text-xl md:text-2xl font-bold text-gray-900">Babu Lal Badamiya Devi Institute of Health</span>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span className="fa fa-bars"></span>
                 </button>
@@ -68,8 +61,6 @@ export default function Navbar1() {
                             <div className="dropdown-menu m-0">
                                 <a href="team.html" className="dropdown-item">Founders Vision</a>
                                 <a href="team.html" className="dropdown-item">Our Team</a>
-                                {/* <a href="testimonial.html" className="dropdown-item">Testimonial</a> */}
-                                {/* <a href="404.html" className="dropdown-item">404 Page</a> */}
                             </div>
                         </div>
                     </div>
