@@ -18,7 +18,7 @@ export default function Service() {
         {/* <div className="container py-5"> */}
             <div className="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
                 <div className="sub-style">
-                    <h4 className="sub-title px-3 mb-0" style={{fontSize:'2.5rem'}}>Our Services</h4>
+                    <h4 className="sub-title px-3 mb-0 mt-2">Our Services</h4>
                 </div>
                 {/* <h1 className="display-3 mb-4">Our Service</h1> */}
                 {/* <p className="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p> */}

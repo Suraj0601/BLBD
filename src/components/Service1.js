@@ -4,7 +4,7 @@ import './style.css';
 
 const ServiceArcCarousel = () => {
   return (
-<div className="container-fluid h-50">
+<div className="container h-50">
  <div class="voidDesign h-20" id="voidDesign">
    <div class="crop">
      <ul id="cardService-list" class="ulDesign">

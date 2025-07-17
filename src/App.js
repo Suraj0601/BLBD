@@ -7,7 +7,6 @@ import './bootstrap.min.css';
 
 import Navbar from './components/Navbar';
 import Service from './components/Service';
-import Service1 from './components/Service1';
 import Aboutus from './components/Aboutus';
 import Footer from './components/Footer';
 
@@ -19,7 +18,6 @@ function App() {
 {/* <Navbar tittle="Home" /> */}
 <Navbar tittle="Home" />
 <Service/>
-<Service1/>
 <Aboutus/>
 <Footer/>
 
