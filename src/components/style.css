@@ -252,8 +252,16 @@
 }
 
 .sticky-top.navbar-light .navbar-brand img {
-    max-height: 70px;
-    margin-left: -5rem;
+    max-height: 90px;
+}
+@media (max-width: 513.98px) {
+    .sticky-top.navbar-light .navbar-brand img {
+        max-height: 50px;
+    }
+        .sticky-top.navbar-light {
+            position: sticky;
+            background: var(--bs-white);
+        }
 }
 
 .navbar .dropdown-toggle::after {
