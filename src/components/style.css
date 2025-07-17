@@ -262,6 +262,11 @@
             position: sticky;
             background: var(--bs-white);
         }
+                .bgLight {
+                    --bs-bg-opacity: 1;
+                    background-color: rgb(165, 208, 129) !important;
+                    font-size: 14px;
+                }   
 }
 
 .navbar .dropdown-toggle::after {
