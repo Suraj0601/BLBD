@@ -1,10 +1,18 @@
-    .sticky-top.navbar-light {
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./components/assets/helvetica-255/Helvetica.ttf') format('truetype');
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sticky-top.navbar-light {
         position: sticky;
         /* background: var(--bs-light) !important; */
         background: #e6ebe3 !important;
     }
         .sticky-top.navbar-light .navbar-brand img {
-            max-height: 90px;
+            max-height: 80px;
         }
     
         .navbar-light .navbar-brand img {
@@ -13,6 +21,18 @@
         }
 .no-arrow::after {
     display: none !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000 !important;
+        font-size: 18px;
+        font-weight: initial;
+        margin-left: 0.3rem;
+        font-family: helvetika;
+        /* font-style: oblique; */
+}
+.logLeft{
+    margin-left: -4rem !important;
 }
 
  @media (max-width: 991.98px) {
@@ -59,16 +79,22 @@
         background-color: rgb(165, 208, 129) !important;
         font-size: 10px !important;
     }
+    .logLeft{
+        margin-left: 1rem !important;
+    }
 }
 
 
-.textColor{
+
+.textColor,.text-dark{
     color:#296e01ff;
+    font-size: 15px;
 }
 .bgLight {
     --bs-bg-opacity: 1;
     background-color: rgb(165, 208, 129) !important;
     font-size: 24px;
+    font-family: helvetika;
 }
 .section-title .sub-style {
     position: relative;
@@ -114,6 +140,7 @@
     transition: background-color 0.3s ease, color 0.3s ease;
     background-color: #e6ebe3;
         margin: -8px 5px -8px 0px;
+        font-family: helvetika;
 }
 .dropdown-item {
     /* background-color: #e6ebe3 !important; */
@@ -132,3 +159,86 @@
     background-color: #0d6efd;
     color: #fff;
 }
+
+/* Service Card Start */
+
+/*** Service Start ***/
+.service .service-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+}
+
+.service .service-item .service-img {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.service .service-item .service-img img {
+    transition: 0.5s;
+}
+
+.service .service-item .service-img::before {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: 0.5s;
+    z-index: 5;
+
+}
+
+.service .service-item:hover .service-img::before {
+    height: 100%;
+    background: rgba(21, 185, 217, .3);
+}
+
+.service .service-item .service-img:hover img {
+    transform: scale(1.3);
+}
+
+.service .service-item .service-content {
+    position: relative;
+    z-index: 2;
+
+}
+
+.service .service-item .service-content::before {
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: rgba(21, 185, 217, .5);
+    transition: 0.5s;
+    z-index: 3;
+}
+
+.service .service-item:hover .service-content::before {
+    background: rgba(21, 185, 217, .5);
+    height: 100%;
+}
+
+.service .service-item .service-content .service-content-inner {
+    transition: 0.5s;
+}
+
+
+.service .service-item:hover .service-content .service-content-inner {
+    position: relative;
+    color: var(--bs-white) !important;
+    z-index: 9;
+}
+
+.service .service-item:hover .service-content .service-content-inner h5 {
+    color: var(--bs-secondary);
+}
+
+/*** Service End ***/
+/* Service Card End */

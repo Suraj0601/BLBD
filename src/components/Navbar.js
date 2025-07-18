@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from './assets/blbd-hindi-logo.png'; // Place your logo here or use public/logo.png
-import carousel from './assets/service-5.jpg'
-import carousel2 from './assets/service.jpg'
+import carousel from './assets/med.jpg'
+import carousel2 from './assets/clg.jpg'
+import carouse3 from './assets/med2.jpg'
 
 const Header = () => {
   return (
@@ -10,7 +11,7 @@ const Header = () => {
       <div className="bgLight py-1 border-bottom">
         <div className="container d-flex justify-content-between align-items-center small">
             <div className="d-flex flex-wrap">
-                            <a href="#" className="text-dark me-4"><i className="fas fa-map-marker textColor me-2"></i>Find A Location</a>
+                            <a href="#" className="text-dark me-4"><i className="fas fa-map-marker textColor me-2"></i>Get Location</a>
                             <a href="#" className="text-dark me-4"><i className="fas fa-phone-alt textColor me-2"></i>+91 920-495-1513</a>
                             <a href="#" className="text-dark me-0"><i className="fas fa-envelope textColor me-2"></i> blbd.edu@gmail.com</a>
             </div>
@@ -28,7 +29,7 @@ const Header = () => {
         <div className="container">
           {/* Logo and Company Name */}
           <a className="navbar-brand d-flex align-items-center" href="/">
-            <img src={logo} alt="Logo" className="me-2" />
+            <img src={logo} alt="Logo" className="me-2 logLeft" />
             <div className="d-flex flex-column lh-sm">
                 {/* <span className="fw-bold fs-5">Babu Lal Badamiya Devi</span>
                 <span className="text-muted small">Institute of Health, Ranchi</span> */}
@@ -42,7 +43,7 @@ const Header = () => {
 
           {/* Navigation Links */}
           <div className="collapse navbar-collapse" id="mainNavbar">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link" href="/">Home</a>
               </li>
@@ -55,15 +56,132 @@ const Header = () => {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                 >
-                    Education<i className="bi bi-caret-down-fill ms-1"></i>
+                    Courses
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
                     <li><a className="dropdown-item" href="/services/nursing">ANM</a></li>
                     <li><a className="dropdown-item" href="/services/paramedical">GNM</a></li>
                     <li><a className="dropdown-item" href="/services/ayurveda">B.sc Nursing</a></li>
+                    <li><a className="dropdown-item" href="/services/ayurveda">Paramedical</a></li>
                 </ul>
                 </li>
-              <li className="nav-item">
+                {/* Prabha */}
+                
+
+                <li className="nav-item dropdown">
+                <a
+                    className="nav-link dropdown-toggle no-arrow"
+                    href="#"
+                    id="servicesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    Approvals
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
+                    <li><a className="dropdown-item" href="/services/nursing">Courses Recognised by Jharkhand State Medical Faculty</a></li>
+                    <li><a className="dropdown-item" href="/services/paramedical">ANM (INC Approved)</a></li>
+                    <li><a className="dropdown-item" href="/services/paramedical">GNM (INC Approved)</a></li>
+                    <li><a className="dropdown-item" href="/services/ayurveda">B.sc Nursing (INC Approved)</a></li>
+                </ul>
+                </li>
+
+                <li className="nav-item dropdown">
+                <a
+                    className="nav-link dropdown-toggle no-arrow"
+                    href="#"
+                    id="servicesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    Admissions
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
+                    <li><a className="dropdown-item" href="/services/nursing">Eligibility Criteria</a></li>
+                    <li><a className="dropdown-item" href="/services/paramedical">Application Procss</a></li>
+                    <li><a className="dropdown-item" href="/services/ayurveda">Important Dates</a></li>
+                    <li><a className="dropdown-item" href="/services/ayurveda">Scholarships</a></li>
+                </ul>
+                </li>
+
+                <li className="nav-item dropdown">
+                <a
+                    className="nav-link dropdown-toggle no-arrow"
+                    href="#"
+                    id="servicesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    Campus Life
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
+                    <li><a className="dropdown-item" href="/services/nursing">Student Activities and Clubs</a></li>
+                    <li><a className="dropdown-item" href="/services/paramedical">Events and cultural Programs</a></li>
+                    <li><a className="dropdown-item" href="/services/ayurveda">Sports Facilities</a></li>
+                    <li><a className="dropdown-item" href="/services/ayurveda">Photo Gallery</a></li>
+                </ul>
+                </li>
+
+                <li className="nav-item dropdown">
+                <a
+                    className="nav-link dropdown-toggle no-arrow"
+                    href="#"
+                    id="servicesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    News and Updates
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
+                    <li><a className="dropdown-item" href="/services/nursing">Course News</a></li>
+                    <li><a className="dropdown-item" href="/services/paramedical">Announcements</a></li>
+                    <li><a className="dropdown-item" href="/services/ayurveda">Exam Results</a></li>
+                    <li><a className="dropdown-item" href="/services/ayurveda">Blog</a></li>
+                </ul>
+                </li>
+                <li className="nav-item dropdown">
+                <a
+                    className="nav-link dropdown-toggle no-arrow"
+                    href="#"
+                    id="servicesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    Career
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
+                    <li><a className="dropdown-item" href="/services/nursing">Placement Assistance</a></li>
+                    <li><a className="dropdown-item" href="/services/paramedical">Alumni Success Stories</a></li>
+                    <li><a className="dropdown-item" href="/services/ayurveda">Internship Opportunities</a></li>
+                </ul>
+                </li>
+
+                <li className="nav-item dropdown">
+                <a
+                    className="nav-link dropdown-toggle no-arrow"
+                    href="#"
+                    id="servicesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    About Us
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
+                    <li><a className="dropdown-item" href="/services/nursing">Alumni Registration </a></li>
+                    <li><a className="dropdown-item" href="/services/paramedical">Grivance Commitee</a></li>
+                </ul>
+                </li>
+
+                {/* prabha end */}
+
+                
+              {/* <li className="nav-item">
                 <a className="nav-link" href="/about">About</a>
               </li>
               <li className="nav-item">
@@ -71,8 +189,9 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/contact">Contact</a>
-              </li>
+              </li> */}
             </ul>
+
           </div>
         </div>
       </nav>
@@ -100,7 +219,7 @@ const Header = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img src={carousel} className="d-block w-100" alt="image3" style={{height:'35rem'}}/>
+            <img src={carouse3} className="d-block w-100" alt="image3" style={{height:'35rem'}}/>
             <div className="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>Some representative placeholder content for the third slide.</p>

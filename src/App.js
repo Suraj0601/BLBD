@@ -1,5 +1,6 @@
 
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import './bootstrap.min.css';
 // import './style.css';
@@ -15,10 +16,16 @@ function App() {
   return (
    <>
 
-{/* <Navbar tittle="Home" /> */}
-<Navbar tittle="Home" />
-<Service/>
-<Aboutus/>
+<Router>
+      <Navbar tittle="Home" /> {/* Navbar stays at the top */}
+      <Routes>
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/about" element={<Aboutus />} />
+        <Route path="/services" element={<Service />} />
+        {/* <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
+    </Router>
+
 <Footer/>
 
    </>

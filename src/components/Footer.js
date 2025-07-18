@@ -8,19 +8,6 @@ export default function Footer() {
         <div className="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
             <div className="container py-5">
                 <div className="row g-5">
-                    {/* <div className="col-md-6 col-lg-6 col-xl-3">
-                        <div className="footer-item d-flex flex-column">
-                            <h4 className="text-white mb-4"><i className="fas fa-star-of-life me-3"></i>About</h4>
-                            <p>BLBDIH (BABU LAL BADAMIYA DEVI INSTITUTE OF HEALTH) is a Medical Hospita and also a Medical Institute</p>
-                            <div className="d-flex align-items-center">
-                                <i className="fas fa-share fa-2x text-white me-2"></i>
-                                <a className="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i className="fab fa-facebook-f"></i></a>
-                                <a className="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i className="fab fa-twitter"></i></a>
-                                <a className="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i className="fab fa-instagram"></i></a>
-                                <a className="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i className="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div> */}
                     <div className="col-md-6 col-lg-6 col-xl-2">
                         
                     </div>

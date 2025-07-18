@@ -1,5 +1,6 @@
 import React from 'react'
 import carousel from './assets/service.jpg'
+
 import education from './assets/education.jpg'
 import department from './assets/department.jpg'
 import research from './assets/research.jpg'
