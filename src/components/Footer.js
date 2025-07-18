@@ -65,7 +65,7 @@ export default function Footer() {
         {/* <!-- Copyright End --> */}
 
         {/* <!-- Back to Top --> */}
-        <a href="#" className="btn btn-primary btn-lg-square back-to-top"><i className="fa fa-arrow-up"></i></a> 
+        <a href="#" className="btn btn-success btn-lg-square back-to-top"><i className="fa fa-arrow-up"></i></a> 
     </div>
   );
 }

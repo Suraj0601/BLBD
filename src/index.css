@@ -242,3 +242,53 @@ body{
 
 /*** Service End ***/
 /* Service Card End */
+
+/*** Footer Start ***/
+.footer {
+    background: linear-gradient(rgba(41, 86, 11, 0.9), rgba(0, 0, 0, 0.9)), url(./components/assets/med2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer .footer-item a {
+    line-height: 35px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footer .footer-item p {
+    line-height: 35px;
+}
+
+.footer .footer-item a:hover {
+    letter-spacing: 2px;
+    color: #296e01ff !important;
+}
+
+/*** Footer End ***/
+
+/*** copyright Start ***/
+.copyright {
+    background: var(--bs-dark) !important;
+}
+
+/*** copyright end ***/
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+.btn:hover {
+    color: var(--bs-btn-hover-bg) !important;
+    background-color: var(--bs-btn-hover-color) !important;
+    border-color: var(--bs-btn-hover-border-color);
+}

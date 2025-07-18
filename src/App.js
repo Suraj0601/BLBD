@@ -6,6 +6,7 @@ import './bootstrap.min.css';
 // import './style.css';
 
 
+import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Service from './components/Service';
 import Aboutus from './components/Aboutus';
@@ -19,7 +20,7 @@ function App() {
 <Router>
       <Navbar tittle="Home" /> {/* Navbar stays at the top */}
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<Aboutus />} />
         <Route path="/services" element={<Service />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
