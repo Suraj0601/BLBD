@@ -196,46 +196,53 @@ const Header = () => {
         </div>
       </nav>
       {/* slide Start */}
-       <div className="container-fluid position-relative px-1">
-      <div id="carouselExampleDark" className="carousel carousel-dark slide">
-        <div className="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <div className="container-fluid px-0">
+  <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
+    
+    {/* Indicators */}
+    <div className="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    {/* Carousel Items */}
+    <div className="carousel-inner">
+      <div className="carousel-item active" data-bs-interval="10000">
+        <img src={carousel} className="d-block w-100 img-fluid" alt="image1" style={{ maxHeight: '35rem', objectFit: 'cover' }} />
+        <div className="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
         </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active" data-bs-interval="10000">
-            <img src={carousel} className="d-block w-100" alt="image1" style={{height:'35rem'}}/>
-            <div className="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={carousel2} className="d-block w-100" alt="image2" style={{height:'35rem'}}/>
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img src={carouse3} className="d-block w-100" alt="image3" style={{height:'35rem'}}/>
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
+      </div>
+      <div className="carousel-item" data-bs-interval="2000">
+        <img src={carousel2} className="d-block w-100 img-fluid" alt="image2" style={{ maxHeight: '35rem', objectFit: 'cover' }} />
+        <div className="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
         </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
       </div>
+      <div className="carousel-item">
+        <img src={carouse3} className="d-block w-100 img-fluid" alt="image3" style={{ maxHeight: '35rem', objectFit: 'cover' }} />
+        <div className="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
       </div>
+    </div>
+
+    {/* Controls */}
+    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span className="visually-hidden">Previous</span>
+    </button>
+    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span className="carousel-control-next-icon" aria-hidden="true"></span>
+      <span className="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
     </>
   );
 };
