@@ -1,25 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from './assets/blbd-hindi-logo.png'; // Place your logo here or use public/logo.png
 import carousel from './assets/med.jpg'
 import carousel2 from './assets/clg.jpg'
 import carouse3 from './assets/med2.jpg'
 
-const Header = () => {
+export default function Navbar(props) {
   return (
     <>
       {/* Top Bar */}
       <div className="bgLight py-1 border-bottom">
         <div className="container d-flex justify-content-between align-items-center small">
             <div className="d-flex flex-wrap">
-                            <a href="#" className="text-dark me-4"><i className="fas fa-map-marker textColor me-2"></i>Get Location</a>
-                            <a href="#" className="text-dark me-4"><i className="fas fa-phone-alt textColor me-2"></i>+91 920-495-1513</a>
-                            <a href="#" className="text-dark me-0"><i className="fas fa-envelope textColor me-2"></i> blbd.edu@gmail.com</a>
+                            <Link to="#" className="text-dark me-4"><i className="fas fa-map-marker textColor me-2"></i>Get Location</Link>
+                            <Link to="#" className="text-dark me-4"><i className="fas fa-phone-alt textColor me-2"></i>+91 920-495-1513</Link>
+                            <Link to="#" className="text-dark me-0"><i className="fas fa-envelope textColor me-2"></i> blbd.edu@gmail.com</Link>
             </div>
           {/* <div>
-             <a href="https://www.facebook.com/profile.php?id=61578119375234" className="btn btn-light btn-square border rounded-circle nav-fill me-3"><i className="fab fa-facebook-f"></i></a>
-                        <a href="#" className="btn btn-light btn-square border rounded-circle nav-fill me-3"><i className="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/blbdranchi/" className="btn btn-light btn-square border rounded-circle nav-fill me-3"><i className="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/babu-lal-badamiya-devi-institute-of-health-630690373/" className="btn btn-light btn-square border rounded-circle nav-fill me-0"><i className="fab fa-linkedin-in"></i></a>
+             <Link to="https://www.facebook.com/profile.php?id=61578119375234" className="btn btn-light btn-square border rounded-circle nav-fill me-3"><i className="fab fa-facebook-f"></i></Link>
+                        <Link to="#" className="btn btn-light btn-square border rounded-circle nav-fill me-3"><i className="fab fa-twitter"></i></Link>
+                        <Link to="https://www.instagram.com/blbdranchi/" className="btn btn-light btn-square border rounded-circle nav-fill me-3"><i className="fab fa-instagram"></i></Link>
+                        <Link to="https://www.linkedin.com/in/babu-lal-badamiya-devi-institute-of-health-630690373/" className="btn btn-light btn-square border rounded-circle nav-fill me-0"><i className="fab fa-linkedin-in"></i></Link>
           </div> */}
         </div>
       </div>
@@ -28,13 +29,13 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
         <div className="container">
           {/* Logo and Company Name */}
-          <a className="navbar-brand d-flex align-items-center" href="/">
+          <Link className="navbar-brand d-flex align-items-center" to="/">
             <img src={logo} alt="Logo" className="me-2 logLeft" />
             <div className="d-flex flex-column lh-sm">
                 {/* <span className="fw-bold fs-5">Babu Lal Badamiya Devi</span>
                 <span className="text-muted small">Institute of Health, Ranchi</span> */}
             </div>
-            </a>
+            </Link>
 
           {/* Toggler for mobile */}
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
@@ -45,136 +46,128 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="mainNavbar">
             <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" href="/">Home</a>
+                <Link className="nav-link" to="/">{props.tittle}</Link>
               </li>
-              <li className="nav-item dropdown">
-                <a
-                    className="nav-link dropdown-toggle no-arrow"
-                    href="#"
-                    id="servicesDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                >
-                    Courses
-                </a>
+              <li className="nav-item">
+                <Link className="nav-link" to="/services">Service</Link>
+              </li>
+              {/* <li className="nav-item dropdown">
+                <Link className="nav-link dropdown-toggle no-arrow" to="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Courses</Link>
                 <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
-                    <li><a className="dropdown-item" href="/services/nursing">ANM</a></li>
-                    <li><a className="dropdown-item" href="/services/paramedical">GNM</a></li>
-                    <li><a className="dropdown-item" href="/services/ayurveda">B.sc Nursing</a></li>
-                    <li><a className="dropdown-item" href="/services/ayurveda">Paramedical</a></li>
+                    <li><Link className="dropdown-item" to="/services/nursing">ANM</Link></li>
+                    <li><Link className="dropdown-item" to="/services/paramedical">GNM</Link></li>
+                    <li><Link className="dropdown-item" to="/services/ayurveda">B.sc Nursing</Link></li>
+                    <li><Link className="dropdown-item" to="/services/ayurveda">Paramedical</Link></li>
                 </ul>
-                </li>
-                {/* Prabha */}
-                
-
+              </li> */}
                 <li className="nav-item dropdown">
-                <a
+                <Link
                     className="nav-link dropdown-toggle no-arrow"
-                    href="#"
+                    to="#"
                     id="servicesDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                 >
                     Approvals
-                </a>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
-                    <li><a className="dropdown-item" href="/services/nursing">Courses Recognised by Jharkhand State Medical Faculty</a></li>
-                    <li><a className="dropdown-item" href="/services/paramedical">ANM (INC Approved)</a></li>
-                    <li><a className="dropdown-item" href="/services/paramedical">GNM (INC Approved)</a></li>
-                    <li><a className="dropdown-item" href="/services/ayurveda">B.sc Nursing (INC Approved)</a></li>
+                    <li><Link className="dropdown-item" to="/services/nursing">Courses Recognised by Jharkhand State Medical Faculty</Link></li>
+                    <li><Link className="dropdown-item" to="/services/paramedical">ANM (INC Approved)</Link></li>
+                    <li><Link className="dropdown-item" to="/services/paramedical">GNM (INC Approved)</Link></li>
+                    <li><Link className="dropdown-item" to="/services/ayurveda">B.sc Nursing (INC Approved)</Link></li>
                 </ul>
                 </li>
 
                 <li className="nav-item dropdown">
-                <a
+                <Link
                     className="nav-link dropdown-toggle no-arrow"
-                    href="#"
+                    to="#"
                     id="servicesDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                 >
                     Admissions
-                </a>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
-                    <li><a className="dropdown-item" href="/services/nursing">Eligibility Criteria</a></li>
-                    <li><a className="dropdown-item" href="/services/paramedical">Application Procss</a></li>
-                    <li><a className="dropdown-item" href="/services/ayurveda">Important Dates</a></li>
-                    <li><a className="dropdown-item" href="/services/ayurveda">Scholarships</a></li>
+                    <li><Link className="dropdown-item" to="/services/nursing">Eligibility Criteria</Link></li>
+                    <li><Link className="dropdown-item" to="/services/paramedical">Application Procss</Link></li>
+                    <li><Link className="dropdown-item" to="/services/ayurveda">Important Dates</Link></li>
+                    <li><Link className="dropdown-item" to="/services/ayurveda">Scholarships</Link></li>
                 </ul>
                 </li>
 
                 <li className="nav-item dropdown">
-                <a
+                <Link
                     className="nav-link dropdown-toggle no-arrow"
-                    href="#"
+                    to="#"
                     id="servicesDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                 >
                     Campus Life
-                </a>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
-                    <li><a className="dropdown-item" href="/services/nursing">Student Activities and Clubs</a></li>
-                    <li><a className="dropdown-item" href="/services/paramedical">Events and cultural Programs</a></li>
-                    <li><a className="dropdown-item" href="/services/ayurveda">Sports Facilities</a></li>
-                    <li><a className="dropdown-item" href="/services/ayurveda">Photo Gallery</a></li>
+                    <li><Link className="dropdown-item" to="/services/nursing">Student Activities and Clubs</Link></li>
+                    <li><Link className="dropdown-item" to="/services/paramedical">Events and cultural Programs</Link></li>
+                    <li><Link className="dropdown-item" to="/services/ayurveda">Sports Facilities</Link></li>
+                    <li><Link className="dropdown-item" to="/services/ayurveda">Photo Gallery</Link></li>
                 </ul>
                 </li>
 
                 <li className="nav-item dropdown">
-                <a
+                <Link
                     className="nav-link dropdown-toggle no-arrow"
-                    href="#"
+                    to="#"
                     id="servicesDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                 >
                     News and Updates
-                </a>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
-                    <li><a className="dropdown-item" href="/services/nursing">Course News</a></li>
-                    <li><a className="dropdown-item" href="/services/paramedical">Announcements</a></li>
-                    <li><a className="dropdown-item" href="/services/ayurveda">Exam Results</a></li>
-                    <li><a className="dropdown-item" href="/services/ayurveda">Blog</a></li>
+                    <li><Link className="dropdown-item" to="/services/nursing">Course News</Link></li>
+                    <li><Link className="dropdown-item" to="/services/paramedical">Announcements</Link></li>
+                    <li><Link className="dropdown-item" to="/services/ayurveda">Exam Results</Link></li>
+                    <li><Link className="dropdown-item" to="/services/ayurveda">Blog</Link></li>
                 </ul>
                 </li>
                 <li className="nav-item dropdown">
-                <a
+                <Link
                     className="nav-link dropdown-toggle no-arrow"
-                    href="#"
+                    to="#"
                     id="servicesDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                 >
                     Career
-                </a>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
-                    <li><a className="dropdown-item" href="/services/nursing">Placement Assistance</a></li>
-                    <li><a className="dropdown-item" href="/services/paramedical">Alumni Success Stories</a></li>
-                    <li><a className="dropdown-item" href="/services/ayurveda">Internship Opportunities</a></li>
+                    <li><Link className="dropdown-item" to="/services/nursing">Placement Assistance</Link></li>
+                    <li><Link className="dropdown-item" to="/services/paramedical">Alumni Success Stories</Link></li>
+                    <li><Link className="dropdown-item" to="/services/ayurveda">Internship Opportunities</Link></li>
                 </ul>
                 </li>
 
                 <li className="nav-item dropdown">
-                <a
+                <Link
                     className="nav-link dropdown-toggle no-arrow"
-                    href="#"
+                    to="#"
                     id="servicesDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                 >
                     About Us
-                </a>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
-                    <li><a className="dropdown-item" href="/services/nursing">Alumni Registration </a></li>
-                    <li><a className="dropdown-item" href="/services/paramedical">Grivance Commitee</a></li>
+                    {/* <li><Link className="dropdown-item" to="/services/nursing">Alumni Registration </Link></li> */}
+                    <li><Link className="dropdown-item" to="/about">Alumni Registration </Link></li>
+                    <li><Link className="dropdown-item" to="/services/paramedical">Grivance Commitee</Link></li>
                 </ul>
                 </li>
 
@@ -182,13 +175,13 @@ const Header = () => {
 
                 
               {/* <li className="nav-item">
-                <a className="nav-link" href="/about">About</a>
+                <Link className="nav-link" to="/about">About</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/services">Services</a>
+                <Link className="nav-link" to="/services">Services</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/contact">Contact</a>
+                <Link className="nav-link" to="/contact">Contact</Link>
               </li> */}
             </ul>
 
@@ -247,4 +240,3 @@ const Header = () => {
   );
 };
 
-export default Header;
